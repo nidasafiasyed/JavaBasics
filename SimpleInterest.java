@@ -22,7 +22,10 @@ public class SimpleInterest {
         double r = sc.nextDouble();
         sc.close();
         
-        System.out.println(String.format("Interest earned: $%.2f", si.interest(p,n,r)));
+	double interest = si.interest(p,n,r);
+        System.out.println(String.format("Interest earned: $%.2f", interest));
+
+	System.out.println(String.format("Interest earned: $%.2f", si.interest(p,n,r)));
 
 
 	}
